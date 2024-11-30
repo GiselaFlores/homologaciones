@@ -18,8 +18,8 @@
                     <p class="blanco subtitulo">Ministerio de economía</p>
                     <div class="form-container">
                         <div class="row">
-                            <input class="form-control col-auto " type="text" value="Ingrese el número de convenio" aria-label="readonly input example">
-                            <button type="button" class="btn btn-dark  col-auto">BUSCAR</button>
+                            <input class="form-control col-auto " type="text" value="Ingrese el número de convenio" aria-label="readonly input example" id="busqueda">
+                            <button onclick="buscarConvenio()" class="btn btn-dark  col-auto">BUSCAR</button>
                         </div>
                     </div>
                     <p class="mt-3 mb-5 w-75 m-auto text-center blanco">Encontra los convenios homologados por el ministerio de economía, buscalos por su número de convenio</p>
@@ -46,7 +46,7 @@
             </article>
             <article>
                 <div class="container" id="cardss">
-                    <div class="d-flex justify-content-center flex-wrap flex-row gap-5 row-gap-5">
+                    <div class="d-flex justify-content-center flex-wrap flex-row gap-5 row-gap-5" id="conveniosContenedor">
                         <div class="card borderOff" style="width: 24rem;">
                             <div class="card-body p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
