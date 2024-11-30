@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function buscarConvenio() {
     const inputBusqueda = document.getElementById("busqueda").value.trim();
     const contenedor = document.getElementById("conveniosContenedor");
+    console.log(inputBusqueda);
 
     // Cargar el archivo JSON
     fetch("convenios.json")
@@ -37,7 +38,7 @@ function buscarConvenio() {
             if (inputBusqueda) {
                 // Buscar convenio por número
                 const convenioEncontrado = data.find(
-                    (convenio) => convenio.numConvenio === inputBusqueda
+                    (convenio) => convenio.numConvenio == inputBusqueda
                 );
 
                 if (convenioEncontrado) {

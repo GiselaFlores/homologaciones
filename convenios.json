@@ -22,5 +22,29 @@
         "subtitulo": "Ley de alivio fiscal N° 27.653",
         "texto": "La Ley 27.653 de Alivio Fiscal busca apoyar la recuperación económica tras la pandemia, condonando deudas tributarias, aduaneras y de seguridad social vencidas al 31/08/2021 para entidades sin fines de lucro, micro y pequeñas empresas, y monotributistas con montos inferiores a $100.000. También amplía la moratoria de la Ley 27.541 y otorga beneficios a contribuyentes cumplidores, como exenciones impositivas y deducciones fiscales. Además, la AFIP extendió plazos clave para adhesión a la moratoria y solicitud de condonación de deudas.",
         "enlace": "https://www.argentina.gob.ar/economia/politicatributaria/covid-19-medidas-tributarias-nacionales/ley-27653-ley-de-alivio-fiscal-0"
+    },
+    {
+        "id": 4,
+        "numConvenio": "26020220",
+        "titulo": "EMERGENCIA SANITARIA",
+        "subtitulo": "Coronavirus (COVID-19)",
+        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
+        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
+    },
+    {
+        "id": 5,
+        "numConvenio": "26022020",
+        "titulo": "EMERGENCIA SANITARIA",
+        "subtitulo": "Coronavirus (COVID-19)",
+        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
+        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
+    },
+    {
+        "id": 6,
+        "numConvenio": "5624",
+        "titulo": "EMERGENCIA SANITARIA",
+        "subtitulo": "Coronavirus (COVID-19)",
+        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
+        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
     }
 ]
