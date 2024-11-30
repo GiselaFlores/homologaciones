@@ -50,11 +50,27 @@ function buscarConvenio() {
                         "<p>Convenio no encontrado, intente una nueva búsqueda.</p>";
                 }
             } else {
+
+                {
+                    // Mostrar los últimos 3 convenios si no hay búsqueda
+                    const ultimosConvenios = data.slice(-3).reverse(); // Aquí estamos obteniendo los 3 últimos convenios
+                    console.log(ultimosConvenios); // Verificar los últimos 3 convenios
+    
+                    if (ultimosConvenios.length > 0) {
+                        ultimosConvenios.forEach((convenio) => {
+                            contenedor.innerHTML += generarCard(convenio);
+                        });
+                    } else {
+                        contenedor.innerHTML = "<p>No se encontraron convenios.</p>";
+                    }
+                }
+                /*
                 // Mostrar los últimos 3 convenios si no hay búsqueda
-                const ultimosConvenios = data.slice(-3).reverse();
+                const ultimosConvenios = data.slice(3).reverse();
+                
                 ultimosConvenios.forEach((convenio) => {
                     contenedor.innerHTML += generarCard(convenio);
-                });
+                });*/
             }
         })
         .catch((error) => {
