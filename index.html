@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css">
+    <title>HCME</title>
+</head>
+<body>
+    <header>
+            <div class="containe">
+                <div class="contenedor">
+                    <img src="assets/logohcme.png" class="imgLogo" alt="homologación de convenios del ministerio de economía">
+                    <h1 class="blanco">HOMOLOGACIÓN DE CONVENIOS</h1>
+                    <p class="blanco subtitulo">Ministerio de economía</p>
+                    <div class="form-container">
+                        <div class="row">
+                            <input class="form-control col-auto " type="text" value="Ingrese el número de convenio" aria-label="readonly input example">
+                            <button type="button" class="btn btn-dark  col-auto">BUSCAR</button>
+                        </div>
+                    </div>
+                    <p class="mt-3 mb-5 w-75 m-auto text-center blanco">Encontra los convenios homologados por el ministerio de economía, buscalos por su número de convenio</p>
+                </div>
+                <div class="waves">
+                    <div class="wave circulo a"></div>
+                    <div class="wave circulo b"></div>
+                    <div class="wave circulo c"></div>
+                </div>
+            </div>
+            <div class="floating-image">
+                <img src="assets/ilustracion2.png" alt="Imagen sobre las ondas">
+            </div>
+            
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div>
+                    <h2 class="text-center margenTop2">Últimos convenios</h2>
+                    <div class="lineaTres"></div>
+                </div>
+            </article>
+            <article>
+                <div class="container" id="cardss">
+                    <div class="d-flex justify-content-center flex-wrap flex-row gap-5 row-gap-5">
+                        <div class="card borderOff" style="width: 24rem;">
+                            <div class="card-body p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                                </svg>  
+                              <h5 class="card-title mt-4 mb-3">SPJAFIP y SEGAR SEGURIDAD S.A. </h5>
+                              <h6 class="card-subtitle text-body-secondary mb-4">Convenio de colaboración N° 1333/24</h6>
+                              <p class="card-text ">El convenio entre S.P.J.A.F.I.P. y SEGAR SEGURIDAD S.A. establece actividades conjuntas de capacitación tributaria para fortalecer el marco regulatorio. En respuesta a las necesidades económicas y sociales tras la pandemia, SEGAR SEGURIDAD S.A. aportará una membresía mensual durante un plazo de hasta 12 meses, promoviendo así la colaboración institucional.</p>
+                              <a href="convenios/convenio13324.pdf" download class="btn violeta w-75 mt-4">Leer convenio</a>
+                            </div>
+                        </div>
+
+                        <div class="card borderOff" style="width: 24rem;">
+                            <div class="card-body p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                                </svg>  
+                              <h5 class="card-title mt-4 mb-3">EMERGENCIA SANITARIA</h5>
+                              <h6 class="card-subtitle text-body-secondary mb-4">Coronavirus (COVID-19)</h6>
+                              <p class="card-text ">Emergencia Sanitaria - Decreto 260/2020
+                                En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.</p>
+                              <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto" class="btn violeta w-75 mt-4">Leer convenio</a>
+                            </div>
+                        </div>
+
+                        <div class="card borderOff" style="width: 24rem;">
+                            <div class="card-body p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                                </svg>  
+                              <h5 class="card-title mt-4 mb-3">LEY ALIVIO FISCAL</h5>
+                              <h6 class="card-subtitle text-body-secondary mb-4">Ley de alivio fiscal N° 27.653</h6>
+                              <p class="card-text ">La Ley 27.653 de Alivio Fiscal busca apoyar la recuperación económica tras la pandemia, condonando deudas tributarias, aduaneras y de seguridad social vencidas al 31/08/2021 para entidades sin fines de lucro, micro y pequeñas empresas, y monotributistas con montos inferiores a $100.000. También amplía la moratoria de la Ley 27.541 y otorga beneficios a contribuyentes cumplidores, como exenciones impositivas y deducciones fiscales. Además, la AFIP extendió plazos clave para adhesión a la moratoria y solicitud de condonación de deudas.</p>
+                              <a href="https://www.argentina.gob.ar/economia/politicatributaria/covid-19-medidas-tributarias-nacionales/ley-27653-ley-de-alivio-fiscal-0" class="btn violeta w-75 mt-4">Leer convenio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <div>
+                    <h2 class="text-center margenTop">Utilidades</h2>
+                    <div class="lineaTres"></div>
+                    <p class="letraTexto">En esta sección encontraras los links de acceso a lugares que te recomendamos visitar</p>
+                </div>
+
+                <div class="container d-flex justify-content-around">
+                    <div class="links borderU">
+                        <p>Ministerio de economía</p>
+                        <a href="https://www.argentina.gob.ar/economia" class="btn violeta mt-4">Ir al sitio</a>
+                    </div>
+    
+                    <div class="links borderU">
+                        <p>Unión de profesionales jerárquico y jurídicos de afip (UPJAFIP)</p>
+                        <a href="https://upjafip.org" class="btn violeta  mt-4">Ir al sitio</a>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <div class="bannerVioleta">
+                    <h2>Contactanos</h2>
+                    <p class="letraTexto mt-3">Podes enviarnos tu consulta por correo electrónico y te estaremos asesorando a la brevedad, escribinos a:</p>
+                    <p class="correo">Consultas@Homologacionconveniosme.ar</p>                    
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <div class="mt-5">
+                    <div class="linea"></div>
+                    <div class="text-center"><img src="assets/logogorrofrigio.png" alt=""></div>
+                    <div class="lineaDos mt-5"></div>
+                </div>
+                
+                <div>
+                    <p class="links mx-auto mb-5">Toda información brindada es de curso legal y pública</p>
+                    <a class="btn violeta mt-4 mx-auto w-25 margenBottom" id="preguntas">PREGUNTAS FRECUENTES</a>
+                </div>
+
+                <div class="accordion accordion-flush w-50 mx-auto mb-5" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cómo puedo acceder al convenio en PDF protegido con clave si no la recuerdo?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Si no recuerdas la clave para acceder al PDF, puedes comunicarte con nosotros para solicitarla. Te la brindaremos de forma personal para garantizar tu seguridad. Si no puedes hacerlo en persona, envíanos un correo electrónico con tu solicitud para que podamos proporcionarte la clave nuevamente.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Cómo buscar un convenio por número o palabra clave en la web?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Accede al buscador de la cabecera de la web.
+                            Utiliza el filtro de búsqueda ingresando el número del convenio o palabras clave relacionadas.
+                            Pulsa "Buscar".
+                            El sistema mostrará los resultados que coincidan con tu búsqueda. Si tienes problemas, verifica los datos ingresados o contáctanos para ayudarte.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿La documentación disponible es oficial y legible?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Toda la documentación publicada en nuestra plataforma es pública, oficial y cumple con los requisitos legales para su validez. Los documentos están diseñados para ser legibles y accesibles. Si tienes dudas sobre su contenido, contáctanos y con gusto te asistiremos.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="btn violeta mt-4 mx-auto botonChico margenBottom" id="cerrar">CERRAR</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="centrado">
+            <div class="bandaGris">©UPJAFIP-2024 - </div>
+            <div class="bandaBlanca">Design by<a href="http:/gcrea.com.ar">Grea</a></div>
+        </div>
+
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
