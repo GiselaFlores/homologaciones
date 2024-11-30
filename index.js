@@ -49,11 +49,11 @@ function buscarConvenio() {
                     contenedor.innerHTML =
                         "<p>Convenio no encontrado, intente una nueva búsqueda.</p>";
                 }
-            } else {
+            } /*else {
 
                 {
                     // Mostrar los últimos 3 convenios si no hay búsqueda
-                    const ultimosConvenios = data.slice(-3).reverse(); // Aquí estamos obteniendo los 3 últimos convenios
+                    const ultimosConvenios = data.slice(-3).reverse(); // Aquí obtenemos los 3 últimos convenios
                     console.log(ultimosConvenios); // Verificar los últimos 3 convenios
     
                     if (ultimosConvenios.length > 0) {
@@ -66,12 +66,12 @@ function buscarConvenio() {
                 }
                 /*
                 // Mostrar los últimos 3 convenios si no hay búsqueda
-                const ultimosConvenios = data.slice(3).reverse();
+                const ultimosConvenios = data.slice(-3).reverse();
                 
                 ultimosConvenios.forEach((convenio) => {
                     contenedor.innerHTML += generarCard(convenio);
-                });*/
-            }
+                });
+            }*/
         })
         .catch((error) => {
             console.error("Error al cargar el JSON:", error);
@@ -81,6 +81,7 @@ function buscarConvenio() {
 
 // Función para generar la estructura de la card
 function generarCard(convenio) {
+
     return `
         <div class="card borderOff" style="width: 24rem;">
             <div class="card-body p-4">
@@ -97,3 +98,34 @@ function generarCard(convenio) {
         </div>
     `;
 }
+
+
+
+// Función para mostrar los últimos 3 convenios
+function mostrarUltimosConvenios() {
+    const contenedorFijo = document.getElementById("conveniosContenedorFijo");
+
+    // Cargar el archivo JSON
+    fetch("convenios.json")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+
+            // Obtener los últimos 3 convenios
+            const ultimosConvenios = data.slice(-3).reverse();
+            console.log(ultimosConvenios)
+
+            if (ultimosConvenios.lenght > 0) {
+                ultimosConvenios.forEach((convenio) => {
+                    contenedorFijo.innerHTML += generarCard(convenio);
+                });
+            } 
+         
+        })
+        .catch((error) => {
+            console.error("Error al cargar el JSON:", error);
+            contenedorFijo.innerHTML = "<p>Error al cargar los convenios.</p>";
+        });
+}
+
+mostrarUltimosConvenios();
