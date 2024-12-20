@@ -121,6 +121,39 @@ function generarCard(convenio, value) {
 function mostrarUltimosConvenios() {
     const contenedorFijo = document.getElementById("conveniosContenedorFijo");
 
+    // Limpiar el contenedor antes de agregar nuevos convenios
+    contenedorFijo.innerHTML = "";
+
+    // Cargar el archivo JSON
+    fetch("convenios.json")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Datos del JSON:", data);
+
+            // Asegurarse de que los datos estén ordenados por ID (en caso de desorden en el archivo)
+            const datosOrdenados = data.sort((a, b) => b.id - a.id); // Ordenar por ID descendente
+
+            // Obtener los últimos 3 convenios
+            const ultimosConvenios = datosOrdenados.slice(0, 3);
+
+            if (ultimosConvenios.length > 0) {
+                ultimosConvenios.forEach((convenio) => {
+                    contenedorFijo.innerHTML += generarCard(convenio, true);
+                });
+            } else {
+                contenedorFijo.innerHTML = "<p>No hay convenios disponibles para mostrar.</p>";
+            }
+        })
+        .catch((error) => {
+            console.error("Error al cargar el JSON:", error);
+            contenedorFijo.innerHTML = "<p>Error al cargar los convenios.</p>";
+        });
+}
+
+/*
+function mostrarUltimosConvenios() {
+    const contenedorFijo = document.getElementById("conveniosContenedorFijo");
+
     // Cargar el archivo JSON
     fetch("convenios.json")
         .then((response) => response.json())
@@ -142,7 +175,7 @@ function mostrarUltimosConvenios() {
             console.error("Error al cargar el JSON:", error);
             contenedorFijo.innerHTML = "<p>Error al cargar los convenios.</p>";
         });
-}
+}*/
 
 // Asegurar de que el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
