@@ -19,7 +19,7 @@
                     <div class="form-container">
                         <div class="row">
                             <input class="form-control col-auto " type="text" placeholder="Ingrese el número de convenio" aria-label="readonly input example" id="busqueda">
-                            <button onclick="buscarConvenio()" class="btn btn-dark  col-auto">BUSCAR</button>
+                            <button onclick="buscarConvenio()" class="btn btn-dark  col-auto" id="buscarBoton">BUSCAR</button>
                         </div>
                     </div>
                     <p class="mt-3 mb-5 w-75 m-auto text-center blanco">Encontra los convenios homologados por el ministerio de economía, buscalos por su número de convenio</p>
@@ -37,8 +37,8 @@
     </header>
 
     <main>
-        <section>
-            <article>
+        <section id="visible">
+            <article >
                 <div>
                     <h2 class="text-center margenTop2">Convenios buscados</h2>
                     <div class="lineaTres"></div>
@@ -61,7 +61,7 @@
             </article>
             <article>
                 <div class="container" id="cardssfijo">
-                    <div class="d-flex justify-content-center flex-wrap flex-row gap-5 row-gap-5" id="conveniosContenedorfijo">
+                    <div class="d-flex justify-content-center flex-wrap flex-row gap-5 row-gap-5" id="conveniosContenedorFijo">
 
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                       </div>
                     </div>
                   </div>
-                  <a class="btn violeta mt-4 mx-auto botonChico margenBottom" id="cerrar">CERRAR</a>
+                  <a class="btn violeta mt-4 mx-auto w-75 margenBottom" id="cerrar">CERRAR</a>
             </article>
         </section>
     </main>

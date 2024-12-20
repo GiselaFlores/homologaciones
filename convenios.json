@@ -25,26 +25,18 @@
     },
     {
         "id": 4,
-        "numConvenio": "26020220",
-        "titulo": "EMERGENCIA SANITARIA",
-        "subtitulo": "Coronavirus (COVID-19)",
-        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
-        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
+        "numConvenio": "1336",
+        "titulo": "PERFECTURA NAVAL ARGENTINA",
+        "subtitulo": "Protección recíproca",
+        "texto": "Acuerdo para la realización en forma conjunta de actividades de educación y capacitación tributaria impuestos en decreto 260/20 en el marco de la pandemia, para mejorar la calidad de los debidos trabajadores.",
+        "enlace": "convenios/convenio1336.pdf"
     },
     {
         "id": 5,
-        "numConvenio": "26022020",
-        "titulo": "EMERGENCIA SANITARIA",
-        "subtitulo": "Coronavirus (COVID-19)",
-        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
-        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
-    },
-    {
-        "id": 6,
-        "numConvenio": "5624",
-        "titulo": "EMERGENCIA SANITARIA",
-        "subtitulo": "Coronavirus (COVID-19)",
-        "texto": "Emergencia Sanitaria - Decreto 260/2020 En respuesta a la pandemia de COVID-19, el Decreto 260/2020 amplió la emergencia sanitaria en Argentina por un año. Este marco otorgó facultades al Ministerio de Salud para implementar medidas preventivas, educativas y restrictivas con el fin de mitigar el impacto del virus, garantizando derechos esenciales y promoviendo la coordinación entre jurisdicciones y sectores clave.",
-        "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
+        "numConvenio": "1339",
+        "titulo": "CIRCULO DE LA FUERZA ÁEREA ARGENTINA",
+        "subtitulo": "Servicios mutuales salud y financieras",
+        "texto": "Acuerdo por la membresia anual a la institución con beneficios de la quita para los apaortes sociales y contribuciones, en respaldo mutuo.",
+        "enlace": "convenios/convenio1339.pdf"
     }
 ]

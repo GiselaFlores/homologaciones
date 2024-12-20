@@ -290,51 +290,84 @@ body {
     align-items: center;
   }
 
-  .visible{
+ #visible{
     display: none;
   }
 
-    /* Responsividad */
+  
+  .grisBoton{
+    background-color: aliceblue;
+    color: #5c6ac3;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #5c6ac3; 
+  }
 
-@media (max-width: 450px)and(max-width: 767px) {
-      .floating-image img {
-        width: 70vw; 
-        height: 25vh;
-      }
-
-      #cardss{
-        margin-top: 180px;
-      }
-    
-      .borderOff{
-        border: 1px solid #dd500e;
-      }
-
-      .row{
-        flex-direction: column;
-      }
-}
-
-@media (max-width: 768px) {
-      .floating-image img {
-        width: 70vw; 
-        height: 25vh;
-      }
-
-      #cardss{
-        margin-top: 180px;
-      }
-    
-      .borderOff{
-        border: 1px solid #5c6ac3;
-      }
-
-      .row{
-        flex-direction: column;
-      }
-}
-
+  .grisBoton:hover{
+    border: 1px solid #5c6ac3; 
+    color: #5c6ac3;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
   
 
+    /* Responsividad */
 
- 
+
+
+/* Estilos para celulares */
+@media only screen and (max-width: 1024px) {
+  .floating-image {
+    /*width: 70vw; 
+    height: 25vh;*/
+    display: none;
+  }
+
+  #cardss{
+    margin-top: 180px;
+  }
+
+  .borderOff{
+    border: 1px solid #5c6ac3;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+
+  
+}
+
+/* Estilos para tablets 
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  body {
+      font-size: 18px;
+      padding: 0 20px;
+  }
+  .floating-image img {
+      width: 70%;
+      max-width: 600px;
+  }
+
+  .linea{
+    width: 80%;
+  }
+}
+
+/* Estilos para laptops 
+@media only screen and (min-width: 1440px) {
+  body {
+      font-size: 20px;
+      padding: 0 30px;
+  }
+  .floating-image img {
+      width: 50%;
+      max-width: 800px;
+  }
+
+  .linea{
+    width: 80%;
+  }
+}*/
+
+

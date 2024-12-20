@@ -23,10 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+function mostrarContenedor() {
+    const contenedorVisible = document.getElementById("visible");
+    contenedorVisible.style.display = "block"; // Mostrar el contenedor
+}
+
   // Función para cargar y procesar el JSON
 function buscarConvenio() {
     const inputBusqueda = document.getElementById("busqueda").value.trim();
     const contenedor = document.getElementById("conveniosContenedor");
+    const contenedorVisible = document.getElementById("visible");
     console.log(inputBusqueda);
 
     // Cargar el archivo JSON
@@ -43,35 +49,25 @@ function buscarConvenio() {
 
                 if (convenioEncontrado) {
                     // Mostrar el convenio encontrado
-                    contenedor.innerHTML = generarCard(convenioEncontrado);
+                    contenedor.innerHTML = generarCard(convenioEncontrado, false);
+                    contenedorVisible.style.display = "block";
                 } else {
                     // Mostrar mensaje si no se encuentra el convenio
                     contenedor.innerHTML =
                         "<p>Convenio no encontrado, intente una nueva búsqueda.</p>";
+                        contenedorVisible.style.display = "block";
                 }
-            } /*else {
-
-                {
-                    // Mostrar los últimos 3 convenios si no hay búsqueda
-                    const ultimosConvenios = data.slice(-3).reverse(); // Aquí obtenemos los 3 últimos convenios
-                    console.log(ultimosConvenios); // Verificar los últimos 3 convenios
-    
-                    if (ultimosConvenios.length > 0) {
-                        ultimosConvenios.forEach((convenio) => {
-                            contenedor.innerHTML += generarCard(convenio);
-                        });
-                    } else {
-                        contenedor.innerHTML = "<p>No se encontraron convenios.</p>";
-                    }
-                }
-                /*
-                // Mostrar los últimos 3 convenios si no hay búsqueda
-                const ultimosConvenios = data.slice(-3).reverse();
                 
-                ultimosConvenios.forEach((convenio) => {
-                    contenedor.innerHTML += generarCard(convenio);
+                // Mostrar el contenedor de resultados
+                contenedorVisible.style.display = "block";
+
+                // Agregar eventos a los botones "Cerrar búsqueda"
+                document.querySelectorAll(".cerrarBusqueda").forEach((boton) => {
+                    boton.addEventListener("click", () => {
+                        contenedorVisible.style.display = "none"; // Ocultar el contenedor
+                    });
                 });
-            }*/
+            } 
         })
         .catch((error) => {
             console.error("Error al cargar el JSON:", error);
@@ -80,9 +76,10 @@ function buscarConvenio() {
 }
 
 // Función para generar la estructura de la card
-function generarCard(convenio) {
+function generarCard(convenio, value) {
 
-    return `
+    if(value === true){
+        return `
         <div class="card borderOff" style="width: 24rem;">
             <div class="card-body p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
@@ -97,6 +94,25 @@ function generarCard(convenio) {
             </div>
         </div>
     `;
+    }
+
+    else{
+    return `
+        <div class="card borderOff" style="width: 24rem;">
+            <div class="card-body p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="violetaIco" width="64" height="64" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                </svg>
+                <h5 class="card-title mt-4 mb-3">${convenio.titulo}</h5>
+                <h6 class="card-subtitle text-body-secondary mb-4">${convenio.subtitulo}</h6>
+                <p class="card-text">${convenio.texto}</p>
+                <a href="${convenio.enlace}" download class="btn violeta w-75 mt-4">Leer convenio</a>
+                <button class="btn grisBoton mt-3 cerrarBusqueda" id="grisBoton">Cerrar búsqueda</button>
+            </div>
+        </div>
+    `;}
 }
 
 
@@ -115,9 +131,9 @@ function mostrarUltimosConvenios() {
             const ultimosConvenios = data.slice(-3).reverse();
             console.log(ultimosConvenios)
 
-            if (ultimosConvenios.lenght > 0) {
+            if (ultimosConvenios.length > 0) {
                 ultimosConvenios.forEach((convenio) => {
-                    contenedorFijo.innerHTML += generarCard(convenio);
+                    contenedorFijo.innerHTML += generarCard(convenio, true);
                 });
             } 
          
@@ -128,4 +144,10 @@ function mostrarUltimosConvenios() {
         });
 }
 
-mostrarUltimosConvenios();
+// Asegurar de que el DOM esté listo
+document.addEventListener("DOMContentLoaded", () => {
+    mostrarUltimosConvenios();
+});
+
+// Evento asociado al botón de buscar
+document.getElementById("buscarBoton").addEventListener("click", buscarConvenio);
