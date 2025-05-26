@@ -38,5 +38,14 @@
         "subtitulo": "Servicios mutuales salud y financieras",
         "texto": "Acuerdo por la membresia anual a la institución con beneficios de la quita para los apaortes sociales y contribuciones, en respaldo mutuo.",
         "enlace": "convenios/convenio1339.pdf"
+    },
+    {
+        "id": 6,
+        "numConvenio": "1340",
+        "titulo": "PRUEBA",
+        "subtitulo": "Servicios mutuales salud y financieras",
+        "texto": "Acuerdo por la membresia anual a la institución con beneficios de la quita para los apaortes sociales y contribuciones, en respaldo mutuo.",
+        "enlace": "convenios/convenio1339.pdf"
     }
+
 ]

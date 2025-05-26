@@ -335,6 +335,10 @@ body {
     flex-direction: column;
   }
 
+  .linea {
+    width: 80vw;
+  }
+
   
 }
 
