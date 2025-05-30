@@ -1,14 +1,7 @@
 [
+
     {
         "id": 1,
-        "numConvenio": "133324",
-        "titulo": "SPJAFIP y SEGAR SEGURIDAD S.A.",
-        "subtitulo": "Convenio de colaboración N° 1333/24",
-        "texto": "El convenio entre S.P.J.A.F.I.P. y SEGAR SEGURIDAD S.A. establece actividades conjuntas de capacitación tributaria para fortalecer el marco regulatorio. En respuesta a las necesidades económicas y sociales tras la pandemia, SEGAR SEGURIDAD S.A. aportará una membresía mensual durante un plazo de hasta 12 meses, promoviendo así la colaboración institucional.",
-        "enlace": "convenios/convenio13324.pdf"
-    },
-    {
-        "id": 2,
         "numConvenio": "2602020",
         "titulo": "EMERGENCIA SANITARIA",
         "subtitulo": "Coronavirus (COVID-19)",
@@ -16,7 +9,7 @@
         "enlace": "https://www.argentina.gob.ar/normativa/nacional/decreto-260-2020-335423/texto"
     },
     {
-        "id": 3,
+        "id": 2,
         "numConvenio": "27653",
         "titulo": "LEY ALIVIO FISCAL",
         "subtitulo": "Ley de alivio fiscal N° 27.653",
@@ -24,28 +17,28 @@
         "enlace": "https://www.argentina.gob.ar/economia/politicatributaria/covid-19-medidas-tributarias-nacionales/ley-27653-ley-de-alivio-fiscal-0"
     },
     {
+        "id": 3,
+        "numConvenio": "136225",
+        "titulo": "CONVENIO DE COLABORACIÓN MUTUA UPJAFIP Y EL ENCUENTRO SRL",
+        "subtitulo": "Servicios de capacitación y educación tributaría",
+        "texto": "Acuerdo por la membresia anual para educación y capacitación necesaria tributaria, impositiva, social y económica que a empresa",
+        "enlace": "convenios/convenio136225.pdf"
+    },
+    {
         "id": 4,
-        "numConvenio": "1336",
-        "titulo": "PERFECTURA NAVAL ARGENTINA",
-        "subtitulo": "Protección recíproca",
-        "texto": "Acuerdo para la realización en forma conjunta de actividades de educación y capacitación tributaria impuestos en decreto 260/20 en el marco de la pandemia, para mejorar la calidad de los debidos trabajadores.",
-        "enlace": "convenios/convenio1336.pdf"
+        "numConvenio": "136025",
+        "titulo": "CONVENIO DE COLABORACIÓN MUTUA UPJAFIP E INMACO S.R.L.",
+        "subtitulo": "Servicios colaboración mutua",
+        "texto": "Acuerdo de colaboración mutua a la institución de asesoramiento y mediación entre el marco legal de AFIP y INMACO SRL",
+        "enlace": "convenios/convenio136025.pdf"
     },
     {
         "id": 5,
-        "numConvenio": "1339",
-        "titulo": "CIRCULO DE LA FUERZA ÁEREA ARGENTINA",
-        "subtitulo": "Servicios mutuales salud y financieras",
-        "texto": "Acuerdo por la membresia anual a la institución con beneficios de la quita para los apaortes sociales y contribuciones, en respaldo mutuo.",
-        "enlace": "convenios/convenio1339.pdf"
-    },
-    {
-        "id": 6,
-        "numConvenio": "1340",
-        "titulo": "PRUEBA",
-        "subtitulo": "Servicios mutuales salud y financieras",
-        "texto": "Acuerdo por la membresia anual a la institución con beneficios de la quita para los apaortes sociales y contribuciones, en respaldo mutuo.",
-        "enlace": "convenios/convenio1339.pdf"
+        "numConvenio": "136125",
+        "titulo": "CONVENIO DE COLABORACIÓN MUTUA UPJAFIP Y GRUPO PUFSA SAS",
+        "subtitulo": "Servicios de capacitación y educación tributaría",
+        "texto": "Acuerdo por la membresia anual para educación y capacitación necesaria tributaria, impositiva, social y económica para la empresa",
+        "enlace": "convenios/convenio136125.pdf"
     }
 
 ]
